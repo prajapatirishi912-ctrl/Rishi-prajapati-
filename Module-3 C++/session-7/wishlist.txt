@@ -1,0 +1,3 @@
+keyborad 1200
+mouse 800
+chager 500
