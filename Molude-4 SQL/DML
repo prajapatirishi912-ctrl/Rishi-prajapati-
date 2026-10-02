@@ -1,0 +1,127 @@
+Data manuplation lan.
+
+insert update delete
+
+Category:
+INSERT INTO category(cname)VALUES('Electronics');
+INSERT INTO category(cname) VALUES('Fashion');
+INSERT INTO category(cname) VALUES('Furniture');
+INSERT INTO category(cname) VALUES('Books');
+INSERT INTO category(cname) VALUES('Sports');
+INSERT INTO category(cname) VALUES('Beauty');
+INSERT INTO category(cname) VALUES('Grocery');
+INSERT INTO category(cname) VALUES('Toys');
+INSERT INTO category(cname) VALUES('Mobiles');
+INSERT INTO category(cname) VALUES('Laptops');
+
+
+
+INSERT INTO product(pname,catid,price,description)VALUES("TV",1,210000,"SONY 56 LED TV");
+-- Category 1: Electronics
+INSERT INTO product(pname, catid, price, description)
+VALUES
+("TV", 1, 210000, "SONY 56 LED TV"),
+("Washing Machine", 1, 45000, "LG Fully Automatic Washing Machine"),
+("Refrigerator", 1, 55000, "Samsung Double Door Refrigerator");
+
+
+-- Category 2: Fashion
+INSERT INTO product(pname, catid, price, description)
+VALUES
+("Kurti", 2, 1200, "Cotton Printed Kurti"),
+("Jeans", 2, 1800, "Slim Fit Denim Jeans"),
+("T-Shirt", 2, 900, "Premium Cotton T-Shirt");
+
+
+-- Category 3: Furniture
+INSERT INTO product(pname, catid, price, description)
+VALUES
+("Sofa", 3, 35000, "3 Seater Comfortable Sofa"),
+("Dining Table", 3, 25000, "Wooden Dining Table"),
+("Office Chair", 3, 7500, "Ergonomic Office Chair");
+
+
+-- Category 4: Books
+INSERT INTO product(pname, catid, price, description)
+VALUES
+("JavaScript Book", 4, 850, "Complete JavaScript Programming Guide"),
+("Python Book", 4, 950, "Python Programming for Beginners"),
+("Database Book", 4, 750, "Database Management System Guide");
+
+
+-- Category 5: Sports
+INSERT INTO product(pname, catid, price, description)
+VALUES
+("Cricket Bat", 5, 3500, "English Willow Cricket Bat"),
+("Football", 5, 1200, "Professional Football"),
+("Badminton Racket", 5, 2200, "Lightweight Badminton Racket");
+
+
+-- Category 6: Beauty
+INSERT INTO product(pname, catid, price, description)
+VALUES
+("Face Cream", 6, 550, "Moisturizing Face Cream"),
+("Lipstick", 6, 750, "Long Lasting Matte Lipstick"),
+("Perfume", 6, 1500, "Premium Fragrance Perfume");
+
+
+-- Category 7: Grocery
+INSERT INTO product(pname, catid, price, description)
+VALUES
+("Rice", 7, 1200, "Premium Basmati Rice 5kg"),
+("Cooking Oil", 7, 850, "Refined Sunflower Cooking Oil"),
+("Wheat Flour", 7, 450, "Fresh Wheat Flour 5kg");
+
+
+-- Category 8: Toys
+INSERT INTO product(pname, catid, price, description)
+VALUES
+("Remote Car", 8, 1500, "Remote Controlled Toy Car"),
+("Teddy Bear", 8, 900, "Soft Plush Teddy Bear"),
+("Building Blocks", 8, 1200, "Creative Building Blocks Set");
+
+
+-- Category 9: Mobiles
+INSERT INTO product(pname, catid, price, description)
+VALUES
+("iPhone 16", 9, 79999, "Apple iPhone 16 Smartphone"),
+("Samsung Galaxy S25", 9, 74999, "Samsung Galaxy S25 5G Smartphone"),
+("OnePlus 13", 9, 69999, "OnePlus 13 5G Smartphone");
+
+
+-- Category 10: Laptops
+INSERT INTO product(pname, catid, price, description)
+VALUES
+("Dell Inspiron", 10, 65000, "Dell Inspiron Core i5 Laptop"),
+("HP Pavilion", 10, 72000, "HP Pavilion Core i5 Laptop"),
+("Lenovo IdeaPad", 10, 58000, "Lenovo IdeaPad Slim Laptop");
+
+
+INSERT INTO users(username,contact,email)values('Sanjna','909090909','san@gmail.com');
+INSERT INTO cart(uid, pid, qty)
+VALUES
+(1, 2, 1),
+(1, 5, 3),
+(2, 3, 2),
+(2, 7, 1),
+(3, 4, 2),
+(3, 10, 1),
+(4, 6, 3),
+(4, 8, 1),
+(5, 9, 2),
+(5, 12, 1),
+(6, 15, 2),
+(6, 18, 1),
+(7, 20, 3),
+(7, 22, 1),
+(8, 25, 2),
+(8, 27, 1),
+(9, 28, 2),
+(9, 30, 1),
+(10, 11, 2),
+(10, 16, 1);
+
+
+UPDATE  product set price=40000 where pid=1;
+
+DELETE FROM product WHERE pid=17;
